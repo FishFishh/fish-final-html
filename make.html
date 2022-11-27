@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body .fish-main-nav ul .nav-box {
+            left: 240px;
+        }
+
+        body .fish-main {
+            margin-bottom: 0;
+        }
+
+        body .fish-main-nav {
+            margin-bottom: 0;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to bottom, #a1e6ff, #a1e6ff);
+            height: 700px;
+        }
+
+        header img {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        header h2 {
+            font: 100 60px '';
+            margin-bottom: 20px;
+            font-family: font;
+            letter-spacing: 5px;
+            border-bottom: 2px solid rgb(134, 134, 118);
+            color: #ffffff;
+        }
+
+        header p {
+            font: 100 30px '';
+            letter-spacing: 5px;
+        }
+
+        .h-b {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+
+        }
+
+        .h-b p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .h-b-l,
+        .h-b-r {
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer {
+            max-width: 1430px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border: 1px rgba(0, 0, 0, 0.187) solid;
+            margin: 20px 0;
+        }
+
+        .left {
+            width: 70%;
+
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left p {
+            text-align: left;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            font: 600 25px '';
+            color: rgb(147, 145, 142);
+        }
+
+        .top {
+            margin: 30px 0;
+        }
+
+        .top table {
+            margin: 30px 0;
+            width: 100%;
+            border-collapse: collapse;
+            border: rgba(0, 0, 0, 0.216);
+        }
+
+        .top table td {
+            padding: 3px 10px;
+        }
+
+        .top table th {
+            background-color: rgb(248, 248, 248);
+        }
+
+        .left h2{
+            font-size: 30px;
+            position: relative;
+            width: 100%;
+            /* height: 30px; */
+        }
+
+        .left h2::after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: -20px;
+            background-color: rgb(100, 160, 240);
+            width: 15px;
+            height: 100%;
+            top: 0;
+        }
+
+        .left h2::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: rgba(0, 0, 0, 0.223)
+        }
+
+        .left span {
+            font-size: 15px;
+        }
+
+        .imgs {
+            width: 100%;
+            display: flex;
+        }
+
+        .imgs img {
+            width: 25%;
+        }
+
+
+        .b {
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border: rgba(0, 0, 0, 0.216) 1px solid;
+        }
+        @media (max-width:1000px){
+            .h-b-r,.h-b-l,.right{
+                display: none;
+            }
+            .content{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fish">
+        <div class="fish-main">
+            <div class="fish-main-nav">
+                <div class="logo">
+                    <img src="./image/logo.gif" alt="">
+                    <span>Fish的小站</span>
+                </div>
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./Template.html">项目</a></li>
+                    <li><a href="./make.html">关于</a></li>
+                    <li><a href="./painter.html">归档</a></li>
+                    <li><a href="./Login.html">登录</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <h2>关于</h2>
+            <div class="h-b">
+                <div class="h-b-l">
+                    <div class="h-b-l-h">
+                        <p>计算机科学与技术</p>
+                        <span>因为喜欢计算机，所以高考之后报的全是这方面的专业</span>
+                    </div>
+                    <div class="h-b-l-b">
+                        <p>大三</p>
+                        <span>最近在准备考研，上岸冲冲冲</span>
+                    </div>
+                </div>
+                <img src="./image/haha.png" alt="">
+                <div class="h-b-r">
+                    <div class="h-b-r-h">
+                        <p>目标方向</p>
+                        <span>以后想从事后端开发，业余喜欢搞博客美化，CTF，数学建模，学艺不精</span>
+                    </div>
+                    <div class="h-b-r-b">
+                        <p>其他兴趣</p>
+                        <span>画画吧，会弹点ukulele，喜欢看书</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <div class="content">
+                <div class="left">
+                    <div class="top">
+                        <h2>经历：</h2>
+                        <br><span>2020年，大一加入工作室</span><br>
+                        <br><span>2021年，参加工作室的各类比赛</span><br>
+                        <br><span>2022年，准备考研</span>
+                    </div>
+                    <div class="top">
+                        <h2>参与项目：</h2>
+                        <p>项目</p>
+                        <table border="1">
+                            <tr>
+                                <th>项目</th>
+                                <th>时间</th>
+                                <th>完成日期</th>
+                            </tr>
+                            <tr>
+                                <td>商城后台管理网站</td>
+                                <td>2021年10月1日</td>
+                                <td>2021年10月20日</td>
+                            </tr>
+                            <tr>
+                                <td>线上图书室管理系统</td>
+                                <td>2022年5月28日</td>
+                                <td>2022年6月22日</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="fish-main-footer">
+            <span>Fish的小站</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
