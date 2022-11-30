@@ -10,53 +10,8 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/article.css">
     <style>
-        body .fish-main-nav ul .nav-box {
-            left: 360px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(248, 248, 248);
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-
-        body .fish-main-nav {
-            margin-bottom: 0;
-        }
-
-        .main {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            max-width: 1430px;
-            overflow-x: hidden;
-            transform: translateY(0px);
-            background-color: #fff;
-            transition: .3s;
-            padding: 50px;
-            border: 1px solid #000;
-        }
-
-        .img {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background-image: url('./image/2.jpg');
-            background-attachment: fixed;
-            background-size: 100%;
-            background-repeat: no-repeat;
-        }
-
         .img::after {
-            content: '第一篇';
+            content: '编写函数';
             width: 500px;
             height: 200px;
             border-radius: 3px;
@@ -71,72 +26,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-        }
-
-        .section-top {
-            width: 100%;
-            height: 300px;
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 50px;
-        }
-
-        .section-top-middle {
-            width: 200px;
-            height: 200px;
-            border-radius: 58%;
-            background-image: url(./image/logo.gif);
-            background-size: cover;
-            background-position-y: -1px;
-            margin: -12px 116px;
-            border: 0px solid rgba(0, 0, 0, 0.151);
-        }
-
-        .section-top-left,
-        .section-top-right {
-            width: 300px;
-            height: 300px;
-            font-size: 22px;
-            margin-top: 30px;
-        }
-
-        .section-top-left {
-            text-align: right;
-        }
-
-        .section-top p {
-            font-size: 26px;
-            color: #22A39F;
-            margin: 5px 0;
-        }
-
-        .section-middle{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-
-        article {
-            display: flex;
-            justify-content: center;
-        }
-
-        aside {
-            width: 100%;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgb(240, 240, 224);
-            padding: 50px 0;
         }
     </style>
+
 </head>
 
 <body>
@@ -173,34 +65,33 @@
                     </div>
                 </div>
                 <div class="section-middle">
-                    <h2 style="font-size: 30px; margin-top: 50px;">NOW</h2>
-                    <span>“fish is very good”</span>
+                    <h2 style="font-size: 30px; margin-top: 50px;">编写函数，判断输入的三个数字是否能够构成三角形的三条边。</h2>
+                    <span>“”</span>
                 </div>
                 <div class="article1">
-                    这是一篇文章，
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
-                    正文正文<br />
+                            <br />
+                    def judge(a, b, c):<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;L = [a, b, c]<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;L.sort()<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;if L[0] + L[1] > L[2]:<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('YES')<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;else:<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('NO')<br />
+                    <br />
+                    <br />
+                    def main():<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;a = float(input("第一条边是 = "))<br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;b = float(input("第二条边是 = "))<br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;c = float(input("第三条边是 = "))<br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;judge(a, b, c)<br />
+                    <br />
+                    <br />
+                    if __name__ == '__main__':<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;main()<br />
+
                 </div>
             </section>
         </div>
